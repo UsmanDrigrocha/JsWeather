@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+
+    <link rel="icon" type="image/x-icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAYFBMVEX///8AAABtbW10dHTu7u76+vrz8/MVFRXg4OD39/fQ0NCzs7PAwMDY2Ni3t7czMzOtra0fHx+Li4t+fn6EhIRGRkbm5uaWlpZoaGjHx8deXl46OjqgoKAPDw9QUFApKSm/YqYEAAACKUlEQVRoge2Y2bKjMAxEaRazg9lC2P//L0dkktzAJIGaQtwXnYcUi4tGNlLLMQxBEARBEARBEARBEARBEH6bunZ+S9oD4lMFXyJN4F7OlL5O3vO4RuWfqQ2Mz8ivuJ4pTfOM+nHcpMGp2hQsvO1RPKiuUobSpgtkRfJcb63PSDfH8HM8yPqbpN2elG5eB7htrnU5knpl08JnQKvO0Kaoi3texya9hm1Q1P0ZyjTBZfNzEgKdExfn1rcHEVDyqwSJ7sPmn8+5ZE+6S579/bLd9fwqIGeV7imdkVZVOsvny9gLdJzS9DkPRWD7vh3P8Y8L8QgZo51RDrXPx9sWJfXr3Rjgq+v96lNenXsun/YFMJdX8kWkwVxPG4+lnlMS2atL2atzJ5hUiGGqjq9tdvbj2A80hvhyuVfwFuNcYYjDteM3tcMmB4PbWZFz6xg1/TbaPDzu2HoXz73QoGuMEdN6SQ5BlbNA+uaN8jCK+opuko+GHNK3VXRT/XFAQFaOgkNaz/XT87/1wYrat+bL/f+F8nbadCjVoTo+s51qbkk2CTgCp8VO9oxLYR2u3S4d4yM9w85o2NkSRMfnt9o55Rz2TdrRroEh0sPr2rCz5y7JSo5m3PlMjlYx3NcK1Rwtsppox7E5KuCp5xT4uJW5VIAGlk0gGWgafXmy75G3c+195332dLU+Mdv3xLYLDFJ8h/XPvbgvzQ8UNYdzC4IgCIIgCIIgCIIgCILwmT+smRSYqjo7HQAAAABJRU5ErkJggg==">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Enter City to check Weather</h1>
+    <div class="weatherBodyContainer">
+        <div class="searchDiv">
+            <div class="search">
+
+                <input type="search" id="search">
+
+            </div>
+            <button onclick="setCity();"><img src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+                    alt="search--v1" /></button>
+        </div>
+        <div class="weatherReport">
+            <div class="tempDesc"> <img src="" id="image">
+                <h1 class="desc"></h1>
+            </div>
+
+            <div class="txt">
+                <h1 class="temp"></h1>
+                <h1 class="city"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
